@@ -1,0 +1,123 @@
+/* App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  /* adjust as needed */
+  /* height: auto; optional, maintains aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* centers the logo if needed */
+}
+
+
+.header {
+  background: linear-gradient(to right, lightcoral, lightblue);
+  /* Adjust colors as needed */
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* height: 50px; */
+}
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.side1 {
+  width: 55%;
+  margin: 1%;
+  box-sizing: border-box;
+  /* Add borders for separation */
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  height: 100%;
+  background: red;
+}
+
+.side2 {
+  width: 43%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* Add borders for separation */
+  background: linear-gradient(to right, rgb(255, 239, 239), rgb(232, 249, 255));
+  ;
+}
+
+.refresh-button-title {
+  background: transparent;
+  position: fixed;
+  right: 30.3%;
+  bottom: 100px;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  margin-left: 30px;
+}
+
+.refresh-button {
+  background: transparent;
+  position: fixed;
+  right: 45.3%;
+  bottom: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2em;
+  transition: color 0.2s ease-in-out;
+
+}
+
+.settings-button {
+  background: transparent;
+  position: fixed;
+  right: 5%;
+  top: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2em;
+  transition: color 0.2s ease-in-out;
+
+}
+
+.refresh-button-side-text {
+  position: fixed;
+  /* This makes the element positioned relative to the viewport */
+  left: 55%;
+  /* Distance from the right side of the screen */
+  bottom: 59px;
+  /* Distance from the bottom of the screen */
+  background: none;
+  /* Assuming you want a transparent background */
+  border: none;
+  /* Assuming you don't want a border */
+  cursor: pointer;
+  /* Changes the cursor to a hand on hover for better UX */
+  font-size: 1.3em;
+  /* Scaling it wider, adjust as needed */
+  color: #666;
+}
+
+.refresh-button:hover {
+  color: #888;
+  /* or any other color you'd like for hover effect */
+}
+
+/* Remove focus outline for better aesthetics (optional and be cautious with accessibility) */
+.refresh-button:focus {
+  outline: none;
+}
